@@ -1,0 +1,183 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;/*Nesneler bazen seçilebiliyor buton dışında bir yere tıklayınca sonuç vermesin diye yazdım*/
+  }
+  
+body {
+    height: 100vh;
+    display: flex;
+    background-color: #b4b4b4;
+  }
+  #container{
+      width: 750px;
+      height: auto;
+      border-radius: 10px;
+      background-image: url(img/tahta.jpg);
+      margin: auto;
+      position: relative;
+    
+  }
+  
+  .memory-game {
+    width: 640px;
+    height: 640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+    
+  }
+  
+  .memory-card {
+    width:31%;
+    height: 200px;
+    margin: 5px;
+    position: relative;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform.5s;
+    display:block;
+  }
+  .memory-card:active{
+      transform: scale(0.97);
+      transition: transform .2s;
+      
+}
+.memory-card.flip{
+    transform: rotateY(180deg);
+}
+  
+  .front-face,
+  .back-face {
+    width: 100%;
+    height: 100%;
+    
+    position: absolute;
+    border-radius: 5px;
+    backface-visibility: hidden;/*kartın ön yüzünü görmemi sağlar*/
+  }
+  .front-face{
+      transform: rotateY(180deg);/*ön yüz resminin gözükmesi için çevirdim*/
+  }
+  .panel{
+    width: 750px;
+    height: 645px;
+    background-image: url(img/cards.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    border-radius: 6px;
+    padding: 5px;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* h1{
+   
+      font-size: 35px;
+      color:white;
+      margin-top:-400px;
+  }
+   */
+   .panel button{
+    outline: none;
+    background-color:navy;
+    color: yellow;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    border: none;
+    margin-bottom: -450px;
+    margin-left: -40px;
+    cursor: pointer;
+  } 
+  .panel button:hover{
+    opacity: 0.8;
+    background-color: yellow;
+    border: 2px solid red;
+    color: navy;
+  }
+  /* .button.play {
+    box-sizing: border-box;
+    width: 74px;
+    height: 74px;
+    border-width: 37px 0px 37px 74px;
+    border-color: black black black white;
+    cursor: pointer;
+    border-radius: 6px; 
+ 
+  }
+  .button.play:hover{
+    border-color: white white white black;
+
+  }
+  .butonKonum{
+    margin-bottom: -420px;
+    
+    margin-left: -50px;
+    
+  } */
+  .hidden{
+    display: none !important;
+  }
+  .displayNone{
+    display: none !important; ;
+  }
+  #popup1{
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+  }
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 5px;
+    width: 95%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    font-family: 'Gloria Hallelujah', cursive;
+   
+   
+  }
+    
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+    text-align: center;
+  }
+  
+  
+  .popup .content-1 {
+    max-height: 30%;
+    overflow: auto;
+    text-align: center;
+  }
+   #play-again {
+    background-color: #141214;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    font-family: 'Gloria Hallelujah', cursive;
+    color: #ffffff;
+    border-radius: 5px;
+  }  
+  .displayShow {
+    /*visibility: visible !important;*/
+    /*display:block ; buda olur*/
+   visibility: visible;
+    opacity: 100 !important;
+  }
+  

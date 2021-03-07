@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kart Oyunu</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div id="container">
+        
+    <section class="memory-game">
+        <div class="memory-card"  data-framework = "r1">
+            <img src="https://apollo.omegabigdata.com/api/game/content/image/372690?secret=27479ff9-4cff-47c6-9081-d3bcb66cd5ec" alt="r1" alt="r1" class="front-face">
+            <img src="img/backCard.jpg" alt="backCard" class="back-face">
+        </div>
+        <div class="memory-card" data-framework = "r1">
+            <img src="https://apollo.omegabigdata.com/api/game/content/image/372690?secret=27479ff9-4cff-47c6-9081-d3bcb66cd5ec" alt="r1" alt="r1" class="front-face">
+            <img src="img/backCard.jpg" alt="backCard" class="back-face">
+        </div>
+        <div class="memory-card" data-framework = "r2">
+            <img src="https://apollo.omegabigdata.com/api/game/content/image/372691?secret=27479ff9-4cff-47c6-9081-d3bcb66cd5ec" alt="r2" class="front-face">
+            <img src="img/backCard.jpg" alt="backCard" class="back-face">
+        </div>
+        <div class="memory-card" data-framework = "r2">
+            <img src="https://apollo.omegabigdata.com/api/game/content/image/372691?secret=27479ff9-4cff-47c6-9081-d3bcb66cd5ec" alt="r2" class="front-face">
+            <img src="img/backCard.jpg" alt="backCard" class="back-face">
+        </div>
+        <div class="memory-card" data-framework = "r3">
+            <img src="https://apollo.omegabigdata.com/api/game/content/image/372692?secret=27479ff9-4cff-47c6-9081-d3bcb66cd5ec" alt="r3" class="front-face">
+            <img src="img/backCard.jpg" alt="backCard" class="back-face">
+        </div>
+        <div class="memory-card" data-framework = "r3">
+            <img src="https://apollo.omegabigdata.com/api/game/content/image/372692?secret=27479ff9-4cff-47c6-9081-d3bcb66cd5ec" alt="r3" class="front-face">
+            <img src="img/backCard.jpg" alt="backCard" class="back-face">
+        </div>
+        <div class="memory-card" data-framework = "r4">
+            <img src="https://apollo.omegabigdata.com/api/game/content/image/372693?secret=27479ff9-4cff-47c6-9081-d3bcb66cd5ec"alt="r4" class="front-face">
+            <img src="img/backCard.jpg" alt="backCard" class="back-face">
+        </div>
+        <div class="memory-card" data-framework = "r4">
+            <img src="https://apollo.omegabigdata.com/api/game/content/image/372693?secret=27479ff9-4cff-47c6-9081-d3bcb66cd5ec" alt="r4" class="front-face">
+            <img src="img/backCard.jpg" alt="backCard" class="back-face">
+        </div>
+        <div class="memory-card" data-framework = "r5">
+            <img src="https://apollo.omegabigdata.com/api/game/content/image/372694?secret=27479ff9-4cff-47c6-9081-d3bcb66cd5ec" alt="r5" class="front-face">
+            <img src="img/backCard.jpg" alt="backCard" class="back-face">
+        </div>
+        <!-- <div class="memory-card" data-framework = "r5">
+            <img src="img/r5.jpg" alt="r5" class="front-face">
+            <img src="img/backCard.jpg" alt="backCard" class="back-face">
+        </div>
+        <div class="memory-card" data-framework = "r6">
+            <img src="img/r6.jpg" alt="r6" class="front-face">
+            <img src="img/backCard.jpg" alt="backCard" class="back-face">
+        </div>
+        <div class="memory-card" data-framework = "r6">
+            <img src="img/r6.jpg" alt="r6" class="front-face">
+            <img src="img/backCard.jpg" alt="backCard" class="back-face">
+        </div> -->
+      
+
+</section>
+
+<div id="start" class="panel">
+    <!-- <h1> &#127775;HAFIZA OYUNU&#127775;</h1> -->
+ <button onclick="init();" type="button" value="start">Start Game</button>
+ <!-- <div class="butonKonum">
+ <button class='button play' onclick="init();"></button>
+</div>
+</div> -->
+<!-- <div id="popup1" class="overlay">
+    <div class="popup">
+        <h2>Tebrikler 🎉</h2>
+        <a class="close" href=# >×</a>
+        <div class="content-1">
+            Tebrikler Oyunu Kazabdınız.🎉🎉
+        </div>
+        <div class="content-2">
+            <p><span id=finalMove> </span> Hamle yaptın </p>
+            <p>in <span id=totalTime> </span> </p>
+            <p>Rating:  <span id=starRating></span></p>
+        </div>
+        <button id="play-again"onclick="playAgain()">
+            Play again 😄</a>
+        </button>
+    </div>
+</div> -->
+</div>
+<div id="popup1" class="displayNone">
+    <div class="popup">
+        <h2>🎉Congratulations 🎉</h2>
+        <div class="content-1">
+         🎉 Congratulations you're a winner 🎉
+        </div>
+        <button id="play-again"onclick="playAgain()">
+         <a href="https://www.google.com.tr/" style="text-decoration: none;color: wheat;">Finish 😄</a>
+        </button>
+    </div>
+   
+</div>
+
+
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
